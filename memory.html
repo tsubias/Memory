@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Memory Practice Game</title>
+	<link href='http://fonts.googleapis.com/css?family=Jura:400,500,600' rel='stylesheet' type='text/css'>
+	<link href="memory.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Simple Memory Game using jQuery</h1>
+		<div class="reset">Reset</div>
+		<div class="setup">Setup</div>
+		<div class="board-line"><h2>Height: <input type="number" name="height" min="1" max="5" value="4" size="1"></h2></div>
+		<div class="board-line"><h2>Width: <input type="number" name="width" min="1" max="8" value="3" size="1"></h2></div>
+		<div class="board-line"><h2>Moves: </h2><span class="moves"></span></div>
+		<div class="board-line"><h2>Score: </h2><span class="score"></span></div>
+		</header>
+	<div id="board"></div>
+	<div class="hide board-line warn-box">
+		<h2>> <span class="warn"></span></h2>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="memory.js"></script>
+</body>
+
+</html>
